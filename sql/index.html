@@ -438,7 +438,7 @@
         <li>WITHOUT</li>
       </ul>
     </section>
-
+    <!-- SQL Examples -->
     <section>
       <h3>Примеры использования SQL команд</h3>
       <ul>
@@ -472,10 +472,10 @@
         Создание <b>псевдонимов</b> столбцов:
         <li>
           <pre>
-            SELECT column1 <b>AS</b> alias1,
-                   column2 <b>AS</b> alias2,
-                   ...
-                   columnN <b>AS</b> aliasN
+            SELECT <i>column1</i> <b>AS</b> <i>alias1</i>,
+                   <i>column2</i> <b>AS</b> <i>alias2</i>,
+                   <i>...</i>
+                   <i>columnN</i> <b>AS</b> <i>aliasN</i>
             FROM table;
           </pre>
         </li>
@@ -484,7 +484,7 @@
         Удаление <b>дубликатов</b> строк:
         <li>
           <pre>
-            SELECT <b>DISTINCT</b> <i>columns</i>
+            SELECT <b>DISTINCT</b> <i>columns...</i>
             FROM <i>table</i>;
           </pre>
         </li>
@@ -494,17 +494,31 @@
         Выполнение <b>сортировки</b> по одному произвольному столбцу:
         <li>
           <pre>
-            SELECT columns
-            FROM table
-            <b>OREDER BY</b> sort_column [ ASC | DESC ]
+            SELECT <i>columns...</i>
+            FROM <i></i>
+            <b>OREDER BY sort_column [ ASC | DESC ]</b>
           </pre>
           <b>ASC</b> - Восходящий порядок сортировки (По возрастанию)<br>
           <b>DESC</b> - Нисходящий порядок сортировки (По убываниюы)
         </li>
       </ul>
 
-    </section>
+      <ul>
+        Выполнение <b>сортировки</b> по нескольким столбцам:
+        <li>
+          <pre>
+            SELECT columns...
+            FROM table
+            <b>ORDER by sort_column1 [ASC | DESC],
+                     sort_column2 [ASC | DESC],
+                     ...
+                     sort_columnN [ASC | DESC];</b>
+            </table>
+          </pre>
+        </li>
+      </ul>
 
+    </section>
     <!-- SQL TERMS -->
     <section>
       <h3>Терминология</h3>
