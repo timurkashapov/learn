@@ -3,18 +3,22 @@
   <head>
     <meta charset="utf-8">
     <title>SQL</title>
+    <link rel="stylesheet" href="../~commons/css/normalize.css">
+    <link rel="stylesheet" href="../~commons/css/master.css">
   </head>
   <body>
     <header>
       <h1>SQL</h1>
       <nav>
-        <ul>
+        <ul class="navigation">
           <li><a href="">a</a></li>
           <li><a href="">b</a></li>
           <li><a href="">c</a></li>
         </ul>
       </nav>
     </header>
+
+    <hr>
 
 
     <section>
@@ -56,9 +60,10 @@
               Ключевое слово          Индетификатор
 
       </pre>
-
+    </section>
+    <section>
+      <h4>Команды SQL</h4>
       <ul>
-        <h4>Команды SQL</h4>
         <li>CREATE DATABASE - создание базы данных.</li>
         <li>DROP TABLE -</li>
         <li>CREATE TABLE -</li>
@@ -78,13 +83,15 @@
         <li>Foreign Key (вторичный ключ) -</li>
         <li></li>
       </ul>
+    </section>
 
+    <section>
+      <h4>Типы данных SQL</h4>
       <ul>
-        <h4>Типы данных SQL</h4>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
+        <li>CHARACTER</li>
+        <li>CHARACTER VARYING</li>
+        <li>NATIONAL CHARACTER</li>
+        <li>NATIONAL CHARACTER VARYING</li>
         <li></li>
         <li></li>
         <li>NULL - </li>
@@ -398,13 +405,13 @@
     <section>
       <h3>Терминология</h3>
       <pre>
-        ------------------------------------------
+        +----------------------------------------+
         |  Модель   |   SQL   | Файловая система |
         |----------------------------------------|
         | Отношение | Таблица | Файл             |
         | Атрибут   | Столбец | Поле             |
         | Кортеж    | Строка  | Запись           |
-        ------------------------------------------
+        +----------------------------------------+
       </pre>
     </section>
 
@@ -416,15 +423,15 @@
       <h3>Связи</h3>
 
       <pre>
-         _____           _____
-        |     |_1_____1_|     |
-        |_____|         |_____|
+           _____           _____
+          |     |_1_____1_|     |
+          |_____|         |_____|
 
-         _____          _____
-        |     |_1____*_|     |_
-        |_____|        |_____| |_
-                         |_____| |
-                           |_____|
+           _____           _____
+          |     |_1_____*_|     |_
+          |_____|         |_____| |_
+                            |_____| |
+                              |_____|
 
            _____           _____
          _|     |_*_____*_|     |_
@@ -464,6 +471,7 @@
       </ul>
     </section>
 
+    <hr>
     <footer></footer>
   </body>
 </html>

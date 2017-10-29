@@ -1,0 +1,20 @@
+* {
+  background-color: #eee;
+  /*font-family: monospace;*/
+}
+
+body {
+  margin: 16px;
+}
+
+.navigation {
+  list-style: none;
+}
+
+.navigation > li {
+  display: inline-block;
+}
+
+.navigation > li > a {
+  color: #0000ff;
+}
