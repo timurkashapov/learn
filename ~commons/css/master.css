@@ -18,3 +18,12 @@ body {
 .navigation > li > a {
   color: #0000ff;
 }
+
+
+.timeline {
+  list-style: none;
+}
+
+.timeline > li {
+  display: inline-block;
+}
