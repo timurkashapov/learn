@@ -11,47 +11,47 @@
       <h1>SQL</h1>
       <nav>
         <ul class="navigation">
-          <li><a href="">a</a></li>
-          <li><a href="">b</a></li>
-          <li><a href="">c</a></li>
+          <li><a href="">link0</a></li>
+          <li><a href="">link1</a></li>
+          <li><a href="">link2</a></li>
+          <li><a href=""> ... </a></li>
+          <li><a href="">linkN</a></li>
         </ul>
       </nav>
+      <hr>
     </header>
-
-    <hr>
-
-
+    <!-- ... -->
+    <!-- SQL BIG PICTURE -->
     <section>
-      <h3>С высоты птичьего полета ...</h3>
-
+      <h3>SQL c высоты птичьего полета ...</h3>
       <pre>
-                                                                   Система управления базами данных (СУБД)
-                          JEE / Spring                             host: xxx.xxx.xxx.xxx
-                                                                   port: xxxxx
-    . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .    . . . . . . . . . . . . . . . . . .
-    .                                                         .    .                                 .
-    .    Java POJO         Hibernate              JDBC        .    .    Сервер БД             БД     .
-    .        ___         +----------+         +----------+    .    .    ----------           _____   .
-    .      _|   | -----> |          | ------> |----------| ----------> |          |  <----  |_____|  .
-    .    _| |___| <----- |          | <------ |----------| <---------- |          |  ---->  |_____|  .
-    .   | |___|          +----------+         +----------+    .    .    ----------          |_____|  .
-    .   |___|                                                 .    .                                 .
-    . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .    . . . . . . . . . . . . . . . . . .
+                                                                    Система управления базами данных (СУБД)
+                          JEE / Spring                              host: xxx.xxx.xxx.xxx
+                                                                    port: xxxxx
+    . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .     . . . . . . . . . . . . . . . . . . .
+    .                                                         .     .                                   .
+    .    Java POJO         Hibernate              JDBC        .     .     Сервер БД             БД      .
+    .        ___         +----------+         +----------+    .     .     ----------           _____    .
+    .      _|   | -----> |          | ------> |----------| ------------> |          |  ---->  |_____|   .
+    .    _| |___| <----- |          | <------ |----------| <------------ |          |  <----  |_____|   .
+    .   | |___|          +----------+         +----------+    .     .     ----------          |_____|   .
+    .   |___|                                                 .     .                                   .
+    . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .     . . . . . . . . . . . . . . . . . . .
 
       </pre>
 
     </section>
 
+    <!-- SQL SYNTAX -->
     <section>
       <h3>Синтаксис SQL</h3>
-
       <pre>
                     Комментарий
                          |
                          |
                     -- Comments
                 ___                                     ___
-               |    SELECT       some_name1, some_name2   _|
+               |        SELECT   some_name1, some_name2   _|
 Команда SQL ___|        FROM     some_table               _|___ Предложения
                |        WHERE    state = 'RUS'            _|
                |___     ORDER BY some_name2 ;           ___|
@@ -61,8 +61,9 @@
 
       </pre>
     </section>
+    <!-- SQL COMMANDS -->
     <section>
-      <h4>Команды SQL</h4>
+      <h3>Команды SQL</h3>
       <ul>
         <li>CREATE DATABASE - создание базы данных.</li>
         <li>DROP TABLE -</li>
@@ -70,6 +71,7 @@
         <li>CONSTRAINT -</li>
         <li>VALUES -</li>
         <li>INTO -</li>
+        <li>AS - задание псевдонима всесто индетификатора</li>
         <li>SET -</li>
         <li>SELECT -</li>
         <li>ALTER -</li>
@@ -84,9 +86,10 @@
         <li></li>
       </ul>
     </section>
-
+    <!-- DATA TYPES -->
     <section>
-      <h4>Типы данных SQL</h4>
+      <h3>Типы данных SQL</h3>
+      <h4>Строковые типы</h4>
       <ul>
         <li>CHARACTER</li>
         <li>CHARACTER VARYING</li>
@@ -96,10 +99,44 @@
         <li></li>
         <li>NULL - </li>
       </ul>
+      <h4>Битовые типы</h4>
+      <ul>
+        <li></li>
+        <li></li>
+        <li></li>
+      </ul>
+      <h4>Точные числовые типы данных</h4>
+      <ul>
+        <li></li>
+        <li></li>
+        <li></li>
+      </ul>
+      <h4>Действительные числовые типы данных</h4>
+      <ul>
+        <li></li>
+        <li></li>
+        <li></li>
+      </ul>
+      <h4>Календарные типы данных</h4>
+      <ul>
+        <li></li>
+        <li></li>
+        <li></li>
+      </ul>
+      <h4>Интервальные типы данных</h4>
+      <ul>
+        <li></li>
+        <li></li>
+        <li></li>
+      </ul>
+      <h4>Разное</h4>
+      <ul>
+        <li>NULL</li>
+      </ul>
     </section>
-
+    <!-- KEYWORDS -->
     <section>
-      <h4>Ключевые слова SQL</h4>
+      <h3>Ключевые слова SQL</h3>
       <ul>
         <li>ABSOLUTE</li>
         <li>ACTION</li>
@@ -329,9 +366,9 @@
         <li>ZONE</li>
       </ul>
     </section>
-
+    <!-- POTENCIAL KEYWORDS -->
     <section>
-      <h4>Потенциальные ключевые слова SQL</h4>
+      <h3>Потенциальные ключевые слова SQL</h3>
       <ul>
         <li>AFTER</li>
         <li>ALIAS</li>
@@ -401,7 +438,88 @@
         <li>WITHOUT</li>
       </ul>
     </section>
+    <!-- SQL Examples -->
+    <section>
+      <h3>Примеры использования SQL команд</h3>
+      <ul>
+        Выбор <b>всех</b> столбцов в одной таблице:
+        <li>
+          <pre>
+            SELECT <b>*</b>
+            FROM <i>table</i>;
+          </pre>
+        </li>
+      </ul>
+      <ul>
+        Выбор одного столбца из таблицы:
+        <li>
+          <pre>
+            SELECT <i>column</i>
+            FROM <i>table</i>;
+          </pre>
+        </li>
+      </ul>
+      <ul>
+        Выбор нескоьких столбцов из таблицы:
+        <li>
+          <pre>
+            SELECT <i>columns</i>
+            FROM <i>table</i>
+          </pre>
+        </li>
+      </ul>
+      <ul>
+        Создание <b>псевдонимов</b> столбцов:
+        <li>
+          <pre>
+            SELECT <i>column1</i> <b>AS</b> <i>alias1</i>,
+                   <i>column2</i> <b>AS</b> <i>alias2</i>,
+                   <i>...</i>
+                   <i>columnN</i> <b>AS</b> <i>aliasN</i>
+            FROM table;
+          </pre>
+        </li>
+      </ul>
+      <ul>
+        Удаление <b>дубликатов</b> строк:
+        <li>
+          <pre>
+            SELECT <b>DISTINCT</b> <i>columns...</i>
+            FROM <i>table</i>;
+          </pre>
+        </li>
+      </ul>
 
+      <ul>
+        Выполнение <b>сортировки</b> по одному произвольному столбцу:
+        <li>
+          <pre>
+            SELECT <i>columns...</i>
+            FROM <i></i>
+            <b>OREDER BY sort_column [ ASC | DESC ]</b>
+          </pre>
+          <b>ASC</b> - Восходящий порядок сортировки (По возрастанию)<br>
+          <b>DESC</b> - Нисходящий порядок сортировки (По убываниюы)
+        </li>
+      </ul>
+
+      <ul>
+        Выполнение <b>сортировки</b> по нескольким столбцам:
+        <li>
+          <pre>
+            SELECT columns...
+            FROM table
+            <b>ORDER by sort_column1 [ASC | DESC],
+                     sort_column2 [ASC | DESC],
+                     ...
+                     sort_columnN [ASC | DESC];</b>
+            </table>
+          </pre>
+        </li>
+      </ul>
+
+    </section>
+    <!-- SQL TERMS -->
     <section>
       <h3>Терминология</h3>
       <pre>
@@ -413,12 +531,14 @@
         | Кортеж    | Строка  | Запись           |
         +----------------------------------------+
       </pre>
+      Transaction (транзакция) - одна или несколько SQL команд, которые выполняются как единое логическое целое.
+      СУБД определяет трензакцию как неделимую сущность и либо исполняет её, либо нет.
+      Исполнение транзакции гарантирует сохранность данных, а при возникновении ошибки в, хотя бы, одной операции - исполнение транзакции отменятся.
+
+
+      View (Представление) -
     </section>
-
-    <section>
-
-    </section>
-
+    <!-- SQL RELATIONS -->
     <section>
       <h3>Связи</h3>
 
@@ -448,16 +568,7 @@
         3 нормальная форма
       </pre>
     </section>
-
-    <section>
-      Transaction (транзакция) - одна или несколько SQL команд, которые выполняются как единое логическое целое.
-      СУБД определяет трензакцию как неделимую сущность и либо исполняет её, либо нет.
-      Исполнение транзакции гарантирует сохранность данных, а при возникновении ошибки в, хотя бы, одной операции - исполнение транзакции отменятся.
-
-
-      View (Представление) -
-    </section>
-
+    <!-- SQL SMDB -->
     <section>
       <h3>PostrgeSQL</h3>
       <p>psql - основая утилита по работе с серверами баз данных PostgreSQL</p>
@@ -470,8 +581,6 @@
         <li>[-U user] имя пользователя</li>
       </ul>
     </section>
-
-    <hr>
-    <footer></footer>
+    <footer><hr></footer>
   </body>
 </html>

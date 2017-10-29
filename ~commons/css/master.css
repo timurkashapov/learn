@@ -19,11 +19,14 @@ body {
   color: #0000ff;
 }
 
-
 .timeline {
   list-style: none;
 }
 
 .timeline > li {
   display: inline-block;
+}
+
+ul {
+  list-style: none;
 }
