@@ -18,11 +18,10 @@
           <li><a href="">linkN</a></li>
         </ul>
       </nav>
+      <hr>
     </header>
-
-    <hr>
-
-
+    <!-- ... -->
+    <!-- SQL BIG PICTURE -->
     <section>
       <h3>SQL c высоты птичьего полета ...</h3>
       <pre>
@@ -43,16 +42,16 @@
 
     </section>
 
+    <!-- SQL SYNTAX -->
     <section>
       <h3>Синтаксис SQL</h3>
-
       <pre>
                     Комментарий
                          |
                          |
                     -- Comments
                 ___                                     ___
-               |    SELECT       some_name1, some_name2   _|
+               |        SELECT   some_name1, some_name2   _|
 Команда SQL ___|        FROM     some_table               _|___ Предложения
                |        WHERE    state = 'RUS'            _|
                |___     ORDER BY some_name2 ;           ___|
@@ -62,8 +61,9 @@
 
       </pre>
     </section>
+    <!-- SQL COMMANDS -->
     <section>
-      <h4>Команды SQL</h4>
+      <h3>Команды SQL</h3>
       <ul>
         <li>CREATE DATABASE - создание базы данных.</li>
         <li>DROP TABLE -</li>
@@ -71,6 +71,7 @@
         <li>CONSTRAINT -</li>
         <li>VALUES -</li>
         <li>INTO -</li>
+        <li>AS - задание псевдонима всесто индетификатора</li>
         <li>SET -</li>
         <li>SELECT -</li>
         <li>ALTER -</li>
@@ -85,9 +86,10 @@
         <li></li>
       </ul>
     </section>
-
+    <!-- DATA TYPES -->
     <section>
-      <h4>Типы данных SQL</h4>
+      <h3>Типы данных SQL</h3>
+      <h4>Строковые типы</h4>
       <ul>
         <li>CHARACTER</li>
         <li>CHARACTER VARYING</li>
@@ -97,10 +99,44 @@
         <li></li>
         <li>NULL - </li>
       </ul>
+      <h4>Битовые типы</h4>
+      <ul>
+        <li></li>
+        <li></li>
+        <li></li>
+      </ul>
+      <h4>Точные числовые типы данных</h4>
+      <ul>
+        <li></li>
+        <li></li>
+        <li></li>
+      </ul>
+      <h4>Действительные числовые типы данных</h4>
+      <ul>
+        <li></li>
+        <li></li>
+        <li></li>
+      </ul>
+      <h4>Календарные типы данных</h4>
+      <ul>
+        <li></li>
+        <li></li>
+        <li></li>
+      </ul>
+      <h4>Интервальные типы данных</h4>
+      <ul>
+        <li></li>
+        <li></li>
+        <li></li>
+      </ul>
+      <h4>Разное</h4>
+      <ul>
+        <li>NULL</li>
+      </ul>
     </section>
-
+    <!-- KEYWORDS -->
     <section>
-      <h4>Ключевые слова SQL</h4>
+      <h3>Ключевые слова SQL</h3>
       <ul>
         <li>ABSOLUTE</li>
         <li>ACTION</li>
@@ -330,9 +366,9 @@
         <li>ZONE</li>
       </ul>
     </section>
-
+    <!-- POTENCIAL KEYWORDS -->
     <section>
-      <h4>Потенциальные ключевые слова SQL</h4>
+      <h3>Потенциальные ключевые слова SQL</h3>
       <ul>
         <li>AFTER</li>
         <li>ALIAS</li>
@@ -404,6 +440,43 @@
     </section>
 
     <section>
+      <h3>Примеры использования SQL команд</h3>
+
+      <ul>
+        Выбор всех столбцов в одной таблице:
+        <li>
+          <pre>
+            SELECT *
+            FROM <i>table</i>;
+          </pre>
+        </li>
+      </ul>
+      <ul>
+        Выбор одного столбца из таблицы:
+        <li>
+          <pre>
+            SELECT <i>column</i>
+            FROM <i>table</i>;
+          </pre>
+        </li>
+      </ul>
+      <ul>
+        Создание псевдонимов столбцов:
+        <li>
+          <pre>
+            SELECT column1 <b>AS</b> alias1,
+                   column2 <b>AS</b> alias2,
+                   ...
+                   columnN <b>AS</b> aliasN
+            FROM table;
+          </pre>
+        </li>
+      </ul>
+
+    </section>
+
+    <!-- SQL TERMS -->
+    <section>
       <h3>Терминология</h3>
       <pre>
         +----------------------------------------+
@@ -414,12 +487,14 @@
         | Кортеж    | Строка  | Запись           |
         +----------------------------------------+
       </pre>
+      Transaction (транзакция) - одна или несколько SQL команд, которые выполняются как единое логическое целое.
+      СУБД определяет трензакцию как неделимую сущность и либо исполняет её, либо нет.
+      Исполнение транзакции гарантирует сохранность данных, а при возникновении ошибки в, хотя бы, одной операции - исполнение транзакции отменятся.
+
+
+      View (Представление) -
     </section>
-
-    <section>
-
-    </section>
-
+    <!-- SQL RELATIONS -->
     <section>
       <h3>Связи</h3>
 
@@ -449,16 +524,7 @@
         3 нормальная форма
       </pre>
     </section>
-
-    <section>
-      Transaction (транзакция) - одна или несколько SQL команд, которые выполняются как единое логическое целое.
-      СУБД определяет трензакцию как неделимую сущность и либо исполняет её, либо нет.
-      Исполнение транзакции гарантирует сохранность данных, а при возникновении ошибки в, хотя бы, одной операции - исполнение транзакции отменятся.
-
-
-      View (Представление) -
-    </section>
-
+    <!-- SQL SMDB -->
     <section>
       <h3>PostrgeSQL</h3>
       <p>psql - основая утилита по работе с серверами баз данных PostgreSQL</p>
@@ -471,8 +537,6 @@
         <li>[-U user] имя пользователя</li>
       </ul>
     </section>
-
-    <hr>
-    <footer></footer>
+    <footer><hr></footer>
   </body>
 </html>
