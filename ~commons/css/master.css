@@ -19,6 +19,17 @@ body {
   color: #0000ff;
 }
 
+<<<<<<< HEAD
 ul {
   list-style: none;
 }
+=======
+
+.timeline {
+  list-style: none;
+}
+
+.timeline > li {
+  display: inline-block;
+}
+>>>>>>> develop
