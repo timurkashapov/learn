@@ -18,3 +18,7 @@ body {
 .navigation > li > a {
   color: #0000ff;
 }
+
+ul {
+  list-style: none;
+}

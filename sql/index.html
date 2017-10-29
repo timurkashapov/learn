@@ -441,12 +441,11 @@
 
     <section>
       <h3>Примеры использования SQL команд</h3>
-
       <ul>
-        Выбор всех столбцов в одной таблице:
+        Выбор <b>всех</b> столбцов в одной таблице:
         <li>
           <pre>
-            SELECT *
+            SELECT <b>*</b>
             FROM <i>table</i>;
           </pre>
         </li>
@@ -461,7 +460,16 @@
         </li>
       </ul>
       <ul>
-        Создание псевдонимов столбцов:
+        Выбор нескоьких столбцов из таблицы:
+        <li>
+          <pre>
+            SELECT <i>columns</i>
+            FROM <i>table</i>
+          </pre>
+        </li>
+      </ul>
+      <ul>
+        Создание <b>псевдонимов</b> столбцов:
         <li>
           <pre>
             SELECT column1 <b>AS</b> alias1,
@@ -470,6 +478,28 @@
                    columnN <b>AS</b> aliasN
             FROM table;
           </pre>
+        </li>
+      </ul>
+      <ul>
+        Удаление <b>дубликатов</b> строк:
+        <li>
+          <pre>
+            SELECT <b>DISTINCT</b> <i>columns</i>
+            FROM <i>table</i>;
+          </pre>
+        </li>
+      </ul>
+
+      <ul>
+        Выполнение <b>сортировки</b> по одному произвольному столбцу:
+        <li>
+          <pre>
+            SELECT columns
+            FROM table
+            <b>OREDER BY</b> sort_column [ ASC | DESC ]
+          </pre>
+          <b>ASC</b> - Восходящий порядок сортировки (По возрастанию)<br>
+          <b>DESC</b> - Нисходящий порядок сортировки (По убываниюы)
         </li>
       </ul>
 
