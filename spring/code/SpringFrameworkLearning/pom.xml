@@ -9,7 +9,19 @@
     <name>SpringFrameworkLearning</name>
     <description>SpringFrameworkLearning</description>
     <inceptionYear>2017</inceptionYear>
+
+
     <dependencies>
+
+        <!-- https://mvnrepository.com/artifact/org.mockito/mockito-all -->
+        <dependency>
+            <groupId>org.mockito</groupId>
+            <artifactId>mockito-all</artifactId>
+            <version>1.10.19</version>
+            <scope>test</scope>
+        </dependency>
+
+
         <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
