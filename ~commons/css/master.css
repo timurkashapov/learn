@@ -19,12 +19,6 @@ body {
   color: #0000ff;
 }
 
-<<<<<<< HEAD
-ul {
-  list-style: none;
-}
-=======
-
 .timeline {
   list-style: none;
 }
@@ -32,4 +26,7 @@ ul {
 .timeline > li {
   display: inline-block;
 }
->>>>>>> develop
+
+ul {
+  list-style: none;
+}
